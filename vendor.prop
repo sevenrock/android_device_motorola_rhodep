@@ -6,3 +6,6 @@ persist.vendor.camera.physical.num=4
 
 # NFC
 ro.vendor.hw.nfc=st
+
+# Radio
+persist.radio.multisim.config=dsds
