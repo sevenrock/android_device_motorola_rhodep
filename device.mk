@@ -31,35 +31,28 @@ PRODUCT_AAPT_PREBUILT_DPI := xxxhdpi xxhdpi xhdpi hdpi
 
 PRODUCT_SHIPPING_API_LEVEL := 31
 
-# Inherit from motorola sm7325-common
-$(call inherit-product, device/motorola/sm7325-common/common.mk)
+# Inherit from motorola sm6375-common
+$(call inherit-product, device/motorola/sm6375-common/common.mk)
 
 # Overlay
 PRODUCT_PACKAGES += \
-    FrameworksResDubai \
-    LineageSystemUIDubai \
-    SettingsProviderResDubai \
-    SystemUIResDubai \
-    WifiResDubai
+    FrameworksResRhodep \
+    LineageSystemUIRhodep \
+    SettingsProviderResRhodep \
+    SystemUIResRhodep
 
 # Audio
 PRODUCT_COPY_FILES += \
-    $(LOCAL_PATH)/audio/sku_yupik/audio_platform_info.xml:$(TARGET_COPY_OUT_VENDOR)/etc/audio/sku_yupik/audio_platform_info.xml \
-    $(LOCAL_PATH)/audio/sku_yupik/mixer_paths.xml:$(TARGET_COPY_OUT_VENDOR)/etc/audio/sku_yupik/mixer_paths.xml \
     $(LOCAL_PATH)/audio/audio_policy_volumes.xml:$(TARGET_COPY_OUT_VENDOR)/etc/audio_policy_volumes.xml \
     $(LOCAL_PATH)/audio/audio_effects.xml:$(TARGET_COPY_OUT_VENDOR)/etc/audio_effects.xml \
     $(LOCAL_PATH)/audio/audio_ext_spkr.conf:$(TARGET_COPY_OUT_VENDOR)/etc/audio_ext_spkr.conf \
     $(LOCAL_PATH)/audio/audio_policy_configuration.xml:$(TARGET_COPY_OUT_VENDOR)/etc/audio_policy_configuration.xml \
     $(LOCAL_PATH)/audio/default_volume_tables.xml:$(TARGET_COPY_OUT_VENDOR)/etc/default_volume_tables.xml
 
-# Camera
-PRODUCT_PACKAGES += \
-    DubaiCameraService \
-    libgui_shim_vendor
-
 # Fingerprint
 PRODUCT_PACKAGES += \
-    android.hardware.biometrics.fingerprint@2.3-service.dubai
+    android.hardware.biometrics.fingerprint@2.1.vendor \
+    com.motorola.hardware.biometric.fingerprint@1.0.vendor
 
 # Init
 $(foreach f,$(wildcard $(LOCAL_PATH)/rootdir/etc/init/hw/*.rc),\
@@ -90,7 +83,7 @@ PRODUCT_COPY_FILES += \
 
 # Sensors
 PRODUCT_PACKAGES += \
-    sensors.dubai
+    sensors.rhodep
 
 PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/sensors/hals.conf:$(TARGET_COPY_OUT_VENDOR)/etc/sensors/hals.conf
@@ -98,9 +91,5 @@ PRODUCT_COPY_FILES += \
 # Soong namespaces
 PRODUCT_SOONG_NAMESPACES += $(LOCAL_PATH)
 
-# Thermal
-PRODUCT_COPY_FILES += \
-    $(LOCAL_PATH)/configs/thermal-engine-dubai-game-perf.conf:$(TARGET_COPY_OUT_VENDOR)/etc/thermal-engine-dubai.conf
-
 # Inherit from vendor blobs
-$(call inherit-product, vendor/motorola/dubai/dubai-vendor.mk)
+$(call inherit-product, vendor/motorola/rhodep/rhodep-vendor.mk)

@@ -14,8 +14,8 @@ fi
 
 set -e
 
-export DEVICE=dubai
-export DEVICE_COMMON=sm7325-common
+export DEVICE=rhodep
+export DEVICE_COMMON=sm6375-common
 export VENDOR=motorola
 export VENDOR_COMMON=${VENDOR}
 
