@@ -77,18 +77,9 @@ PRODUCT_COPY_FILES += \
 
 # NFC
 PRODUCT_PACKAGES += \
-    android.hardware.nfc@1.2.vendor \
-    android.hardware.nfc@1.2-service.st \
-    android.hardware.secure_element@1.2.vendor \
+    android.hardware.nfc@1.2-service.samsung \
     com.android.nfc_extras \
-    libchrome.vendor \
-    Tag \
-    nfc_nci.st21nfc.default
-
-# Permissions
-PRODUCT_COPY_FILES += \
-    frameworks/native/data/etc/android.hardware.nfc.hcef.xml:$(TARGET_COPY_OUT_VENDOR)/etc/permissions/android.hardware.nfc.hcef.xml \
-    frameworks/native/data/etc/com.nxp.mifare.xml:$(TARGET_COPY_OUT_VENDOR)/etc/permissions/com.nxp.mifare.xml
+    Tag
 
 # Sensors
 PRODUCT_PACKAGES += \

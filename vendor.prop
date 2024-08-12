@@ -9,7 +9,7 @@ vendor.qcom.bluetooth.soc=cherokee
 ro.vendor.fm.use_audio_session=true
 
 # NFC
-ro.vendor.hw.nfc=st
+ro.vendor.hw.nfc=samsung
 
 # Radio
 persist.radio.multisim.config=dsds
