@@ -31,4 +31,12 @@
     <!-- Location on the screen of the center of the physical volume up/down buttons. -->
     <dimen name="physical_volume_up_button_center_screen_location_y">600.0px</dimen>
     <dimen name="physical_volume_down_button_center_screen_location_y">760.0px</dimen>
+
+    <!-- Configure protection around the front-facing camera -->
+    <string translatable="false" name="config_frontBuiltInDisplayCutoutProtection">
+        M 662,72
+        a 48.45,48.45 0 1 0 96.9,0
+        a 48.45,48.45 0 1 0 -96.9,0
+        Z
+    </string>
 </resources>
