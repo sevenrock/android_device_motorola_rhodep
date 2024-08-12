@@ -41,7 +41,7 @@ TARGET_RECOVERY_UI_MARGIN_HEIGHT := 90
 TARGET_RECOVERY_DEVICE_DIRS += $(DEVICE_PATH)
 
 # Security
-VENDOR_SECURITY_PATCH := 2024-08-01
+VENDOR_SECURITY_PATCH := 2024-06-01
 
 # inherit from the proprietary version
 include vendor/motorola/rhodep/BoardConfigVendor.mk
