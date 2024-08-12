@@ -38,7 +38,6 @@ $(call inherit-product, device/motorola/sm7325-common/common.mk)
 PRODUCT_PACKAGES += \
     FrameworksResDubai \
     LineageSystemUIDubai \
-    SettingsResDubai \
     SettingsProviderResDubai \
     SystemUIResDubai \
     WifiResDubai
