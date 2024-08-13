@@ -14,6 +14,10 @@ $(call inherit-product, device/motorola/rhodep/device.mk)
 # Inherit some common Lineage stuff.
 $(call inherit-product, vendor/lineage/config/common_full_phone.mk)
 
+# MindTheGapps
+TARGET_IS_GROUPER := true
+$(call inherit-product-if-exists, vendor/gapps/arm64/arm64-vendor.mk)
+
 PRODUCT_NAME := lineage_rhodep
 PRODUCT_DEVICE := rhodep
 PRODUCT_MANUFACTURER := motorola
