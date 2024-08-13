@@ -14,7 +14,6 @@ TARGET_BOOTLOADER_BOARD_NAME := rhodep
 
 # HIDL
 DEVICE_FRAMEWORK_COMPATIBILITY_MATRIX_FILE += $(DEVICE_PATH)/device_framework_matrix_rhodep.xml
-DEVICE_MANIFEST_FILE += $(DEVICE_PATH)/manifest_rhodep.xml
 
 # Kernel
 BOARD_KERNEL_CMDLINE += androidboot.hab.product=rhodep
