@@ -43,8 +43,6 @@ exfat.ko
 moto_f_usbnet.ko
 watchdogtest.ko
 qpnp_adaptive_charge.ko
-rbs_fps_mmi.ko
-focal_fps_mmi.ko
 ldo_vibrator_mmi.ko
 wl2868c.ko
 cci_intf.ko
