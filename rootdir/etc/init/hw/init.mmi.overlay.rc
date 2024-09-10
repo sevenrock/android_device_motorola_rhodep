@@ -55,8 +55,6 @@ on fs
     insmod /vendor/lib/modules/${ro.vendor.mot.gki.path}/tcpc_sgm7220.ko
     insmod /vendor/lib/modules/${ro.vendor.mot.gki.path}/rt_pd_manager.ko
     insmod /vendor/lib/modules/${ro.vendor.mot.gki.path}/mmi_discrete_turbo_charger.ko
-on boot && property:ro.vendor.mot.gki.path=5.4-gki
-    insmod /vendor/lib/modules/${ro.vendor.mot.gki.path}/nfc_i2c.ko
 
 on charger
     insmod /vendor/lib/modules/${ro.vendor.mot.gki.path}/mmi_charger.ko
