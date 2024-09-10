@@ -12,9 +12,6 @@ include device/motorola/sm6375-common/BoardConfigCommon.mk
 # Bootloader
 TARGET_BOOTLOADER_BOARD_NAME := rhodep
 
-# HIDL
-DEVICE_FRAMEWORK_COMPATIBILITY_MATRIX_FILE += $(DEVICE_PATH)/device_framework_matrix_rhodep.xml
-
 # Kernel
 BOARD_KERNEL_CMDLINE += androidboot.hab.product=rhodep
 TARGET_KERNEL_CONFIG += vendor/rhodep_defconfig
