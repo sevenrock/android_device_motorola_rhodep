@@ -27,7 +27,8 @@ PRODUCT_MODEL := moto g82 5G
 PRODUCT_GMS_CLIENTID_BASE := android-motorola
 
 PRODUCT_BUILD_PROP_OVERRIDES += \
-    TARGET_PRODUCT=rhodep_g \
-    PRIVATE_BUILD_DESC="rhodep_g-user 13 T1SUS33.1-124-6-9 aafd64 release-keys"
+    DeviceProduct=rhodep_g \
+    SystemName=rhodep_g \
+    BuildDesc="rhodep_g-user 13 T1SUS33.1-124-6-9 aafd64 release-keys"
 
-BUILD_FINGERPRINT := motorola/rhodep_g/rhodep:13/T1SUS33.1-124-6-9/aafd64:user/release-keys
+BuildFingerprint=motorola/rhodep_g/rhodep:13/T1SUS33.1-124-6-9/aafd64:user/release-keys
