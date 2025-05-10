@@ -182,6 +182,25 @@ vendor/lib64/com.qti.feature2.rtmcx.so
 vendor/lib64/com.qti.feature2.serializer.so
 vendor/lib64/com.qti.feature2.swmf.so
 
+# Camera - imgtuner
+system_ext/etc/permissions/com.motorola.imager.V5.xml
+system_ext/etc/permissions/com.motorola.imager.access_V5.xml
+system_ext/etc/permissions/com.motorola.imagertuning5.rhodep.xml
+system_ext/etc/permissions/com.motorola.imagertuning.v5.xml
+system_ext/etc/permissions/com.motorola.libimgTuner.xml
+system_ext/etc/permissions/privapp-permissions-com.motorola.imagertuning_V5.xml
+system_ext/etc/public.libraries-motoimagetuner.txt
+system_ext/framework/com.motorola.imager.V5.jar
+system_ext/framework/com.motorola.libimgTuner.jar
+system_ext/lib64/libimgTuner_jni.motoimagetuner.so
+system_ext/lib64/motorola.hardware.camera.imgtuner@2.0.so
+system_ext/priv-app/ImagerTuning-V5/ImagerTuning-V5.apk;PRESIGNED
+system/lib64/motorola.hardware.camera.imgtuner@1.0.so
+vendor/bin/hw/motorola.hardware.camera.imgtuner@1.0-service
+vendor/etc/init/motorola.hardware.camera.imgtuner@1.0-service.rc
+vendor/lib64/hw/motorola.hardware.camera.imgtuner@1.0-impl.so
+vendor/lib64/motorola.hardware.camera.imgtuner@1.0.so;MODULE_SUFFIX=_vendor
+
 # Camera - Motorola
 vendor/bin/hw/motorola.hardware.camera.desktop@2.0-service
 vendor/etc/init/motorola.hardware.camera.desktop@2.0-service.rc
