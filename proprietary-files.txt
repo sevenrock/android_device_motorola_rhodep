@@ -265,12 +265,6 @@ product/etc/permissions/com.motorola.camera3.rhodep.xml:vendor/etc/permissions/c
 product/etc/permissions/com.motorola.camera3.xml:vendor/etc/permissions/com.motorola.camera3.xml
 product/etc/permissions/com.motorola.moto-uirefresh.xml
 
-# HotwordEnrollment
-product/priv-app/HotwordEnrollmentOKGoogleHEXAGON/HotwordEnrollmentOKGoogleHEXAGON.apk
-product/priv-app/HotwordEnrollmentXGoogleHEXAGON/HotwordEnrollmentXGoogleHEXAGON.apk
-system_ext/etc/permissions/com.android.hotwordenrollment.common.util.xml
-system_ext/framework/com.android.hotwordenrollment.common.util.jar
-
 # NFC - configs
 vendor/etc/libnfc-nci.conf
 vendor/etc/libnfc-sec-vendor.conf
