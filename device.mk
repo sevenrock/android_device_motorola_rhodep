@@ -53,6 +53,9 @@ PRODUCT_PACKAGES += \
     init.nfc.sec.rc \
     init.oem.fingerprint2.sh
 
+# Lineage Health
+$(call soong_config_set,lineage_health,charging_control_charging_path,/sys/class/power_supply/battery/device/force_charging_disable)
+
 # NFC
 PRODUCT_PACKAGES += \
     android.hardware.nfc-service.sec \
